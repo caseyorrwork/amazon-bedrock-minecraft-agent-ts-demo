@@ -33,8 +33,8 @@ export interface Config {
       mcAuth: process.env.MC_AUTH || 'offline',
       mcPort: parseInt(process.env.MC_PORT || '25565', 10),
       mcVersion: process.env.MC_VERSION || "1.20.1",
-      agentId: process.env.AGENT_ID || "123123",
-      agentAliasId: process.env.AGENT_ALIAS_ID || "123123"
+      agentId: process.env.AGENT_ID || "KPELDOVSCK",
+      agentAliasId: process.env.AGENT_ALIAS_ID || "NFJPOI6L7B"
     };
     
     return config;

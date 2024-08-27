@@ -29,7 +29,7 @@ class BedrockBot {
     constructor(functionHandler, config) {
         // this.logger = new Logger();
         this.logger = console;
-        this.bedrockAgentRuntimeClient = new client_bedrock_agent_runtime_1.BedrockAgentRuntimeClient({ region: 'us-west-2' });
+        this.bedrockAgentRuntimeClient = new client_bedrock_agent_runtime_1.BedrockAgentRuntimeClient({ region: 'us-east-1' });
         this.agentAliasId = config.agentAliasId;
         this.agentId = config.agentId;
         this.functionHandler = functionHandler;
@@ -115,9 +115,11 @@ class BedrockBot {
                 }
                 if ('returnControl' in event) {
                     returnControlData = event.returnControl;
+                    this.logger.info('TEST222222222!!!!! ' + returnControlData);
                 }
             };
             const readable = response.completion;
+            this.logger.info('TEST!!!!! ' + completion);
             try {
                 for (var _d = true, readable_1 = __asyncValues(readable), readable_1_1; readable_1_1 = yield readable_1.next(), _a = readable_1_1.done, !_a; _d = true) {
                     _c = readable_1_1.value;

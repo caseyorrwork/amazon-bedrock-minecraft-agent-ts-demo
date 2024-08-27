@@ -37,7 +37,7 @@ const loadConfig = () => __awaiter(void 0, void 0, void 0, function* () {
 });
 exports.loadConfig = loadConfig;
 //   const getLatestAgentAliasId = async (agentId: string): Promise<string> => {
-//     const client = new BedrockAgentClient({ region: 'us-west-2' });
+//     const client = new BedrockAgentClient({ region: 'us-east-1' });
 //     const input = {
 //       agentId: agentId,
 //     };

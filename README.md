@@ -23,7 +23,7 @@ To install this solution in it's current (beta) state, it's recommended that you
 Additionally you will require a Minecraft client, with version `1.20.1`, and an account to play.
 
 Steps to deploy: 
-- Working in us-west-2 (Oregon)
+- Working in us-east-1 (Oregon)
 - From the Amazon Bedrock console page, enable access to Claude 3 Haiku, and Sonnet models.
 - Using AWS CloudFormation, deploy the template `agent_cfn/amazon-bedrock-minecraft-agent-roc.yaml` to a stack.
 - Note the outputs from the deployed stack `agentId` and `agentAliasId`.
